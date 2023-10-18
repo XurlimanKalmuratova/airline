@@ -11,4 +11,7 @@ urlpatterns = [
     path('flight/', FlightAPIView.as_view()),
     path('flight/<int:pk>/', FlightDetailAPIView.as_view()),
 
+
+        path('auth/', include('dj_rest_auth.urls'))
+
 ]

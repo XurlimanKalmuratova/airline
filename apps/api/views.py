@@ -6,9 +6,14 @@ from apps.airline.models import Airline
 from apps.plane.models import Plane
 from apps.flight.models import Flight
 
+
+
 from .serializers import FlightSerializer
 from .serializers import AirlineSerializer
 from .serializers import PlaneSerializer
+
+
+
 
 class FlightAPIView(APIView):
 
@@ -45,7 +50,6 @@ class FlightDetailAPIView(APIView):
         flight.delete()
         return Response(status=HTTP_204_NO_CONTENT)     
     
-
 
 
 

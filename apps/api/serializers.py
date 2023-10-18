@@ -19,4 +19,4 @@ class FlightSerializer(ModelSerializer):
         model = Flight
         fields = '__all__'
 
-    
+
